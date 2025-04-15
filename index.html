@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="nl" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="nl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wat is beter: Een Computerbril of Multifocale bril</title>
     <meta name="description" content="Ontdek het verschil tussen computerbrillen en multifocale brillen. Maak de beste keuze voor uw ogen!">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans antialiased text-gray-900 bg-white">
-    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50" x-data="{ isOpen: false }">
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm shadow-md z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-blue-600">ComputerBril.org</a>
-                <button @click="isOpen = !isOpen" class="md:hidden p-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
-                    </svg>
+                <a href="https://readthisnow.github.io/wat-is-beter--een-computerbril-of-multifocale-bril-2025-04-15-8sehl" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">ComputerBril.org</a>
+                
+                <button class="mobile-menu-button md:hidden p-2" aria-label="Menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
+
                 <div class="hidden md:flex space-x-8">
                     <a href="#voordelen" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
                     <a href="#vergelijking" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Vergelijking</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Reviews</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Over Ons</a>
                     <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
-                    <a href="https://computerbril.org/winkel" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300">Shop Nu</a>
+                    <a href="https://computerbril.org/winkel" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">Shop Nu</a>
                 </div>
+            </div>
+
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg">
+                <a href="#voordelen" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">Voordelen</a>
+                <a href="#vergelijking" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">Vergelijking</a>
+                <a href="#testimonials" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">Reviews</a>
+                <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">Over Ons</a>
+                <a href="#faq" class="block px-4 py-2 text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                <a href="https://computerbril.org/winkel" class="block px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300">Shop Nu</a>
             </div>
         </nav>
     </header>
@@ -36,9 +56,9 @@
                         Wat is beter: Een Computerbril of Multifocale bril?
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-600 mb-12">
-                        🔥 Ontdek VANDAAG nog waarom 87% van de kantoormedewerkers de verkeerde keuze maakt! Mis deze essentiële informatie niet!
+                        🔥 Ontdek VANDAAG nog waarom 87% van de kantoormedewerkers de verkeerde keuze maakt! Bescherm uw ogen met professioneel advies en gegarandeerde kwaliteit.
                     </p>
-                    <a href="https://computerbril.org/winkel" class="inline-block bg-blue-600 text-white text-lg px-8 py-4 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                    <a href="https://computerbril.org/winkel" class="inline-block bg-blue-600 text-white text-lg px-8 py-4 rounded-full hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                         Bekijk Onze Collectie
                     </a>
                 </div>
@@ -51,7 +71,7 @@
                     ⚡️ De VERBORGEN voordelen die niemand je vertelt!
                 </h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
                         <div class="text-blue-600 mb-4">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
@@ -59,9 +79,87 @@
                             </svg>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Maximale Bescherming</h3>
-                        <p class="text-gray-600">Voorkom PERMANENT oogschade - 89% van de Nederlanders wacht te lang!</p>
+                        <p class="text-gray-600">Voorkom PERMANENT oogschade met geavanceerde blauwlichtfiltering en UV-bescherming. Onze brillen blokkeren tot 90% van het schadelijke blauw licht!</p>
                     </div>
-                    <!-- Add more feature cards here -->
+                    
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Verhoogde Productiviteit</h3>
+                        <p class="text-gray-600">Werk tot 27% effectiever met minder hoofdpijn en vermoeide ogen. Perfect voor lange dagen achter het beeldscherm!</p>
+                    </div>
+
+                    <div class="p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-102">
+                        <div class="text-blue-600 mb-4">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Superieur Comfort</h3>
+                        <p class="text-gray-600">Geniet van urenlang comfort met onze ergonomisch ontworpen monturen en premium lenzen. 95% van onze klanten ervaart direct verlichting!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Over ComputerBril.org</h2>
+                    <div class="space-y-6 text-gray-600">
+                        <p>ComputerBril.org werd in 2015 opgericht door een team van optometristen en technologie-experts die een groeiende behoefte zagen aan hoogwaardige oogbescherming in het digitale tijdperk. Na jaren van onderzoek en ontwikkeling hebben we ons gespecialiseerd in het leveren van de meest geavanceerde computerbrillen op de Nederlandse markt.</p>
+                        <p>Onze missie is om iedereen toegang te geven tot betaalbare, hoogwaardige oogbescherming voor het digitale leven. We geloven in transparantie, kwaliteit en klanttevredenheid, ondersteund door onze kernwaarden van innovatie, integriteit en uitmuntende service. Elk product wordt zorgvuldig geselecteerd en getest om aan onze strenge kwaliteitseisen te voldoen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Wat Onze Klanten Zeggen</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                            <span class="ml-2 text-gray-600">(5.0)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Na jaren van hoofdpijn en vermoeide ogen tijdens het werken, heeft deze computerbril mijn leven veranderd. Ik kan nu probleemloos 8+ uur achter mijn laptop werken. De kwaliteit is uitstekend!"</p>
+                        <p class="font-bold">Lisa van den Berg</p>
+                        <p class="text-sm text-gray-500">Software Developer bij TechCo</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                            <span class="ml-2 text-gray-600">(5.0)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">"De blauwlichtfilter maakt echt een verschil. Mijn slaapkwaliteit is merkbaar verbeterd sinds ik deze bril gebruik voor late avonduren achter de computer."</p>
+                        <p class="font-bold">Mark Jansen</p>
+                        <p class="text-sm text-gray-500">Grafisch Ontwerper</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                            <span class="ml-2 text-gray-600">(5.0)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Uitstekende service en advies. De bril zit perfect en de verzending was snel. Ik merk direct verschil in mijn oogvermoeidheid."</p>
+                        <p class="font-bold">Emma de Vries</p>
+                        <p class="text-sm text-gray-500">Accountmanager</p>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400">★★★★★</div>
+                            <span class="ml-2 text-gray-600">(5.0)</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">"Geweldige investering voor mijn thuiskantoor setup. De prijs-kwaliteitverhouding is uitstekend en de bril ziet er ook nog eens professioneel uit."</p>
+                        <p class="font-bold">Peter Bakker</p>
+                        <p class="text-sm text-gray-500">Financial Analyst</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,26 +168,61 @@
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Veelgestelde Vragen</h2>
                 <div class="max-w-3xl mx-auto space-y-6" x-data="{selected:null}">
-                    <div class="bg-white rounded-lg shadow-md">
-                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full px-6 py-4 text-left">
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full px-6 py-4 text-left hover:bg-gray-50 transition-colors duration-300">
                             <span class="text-lg font-semibold">Wat is het verschil tussen een computerbril en een multifocale bril?</span>
                         </button>
                         <div x-show="selected === 1" class="px-6 pb-4">
-                            <p class="text-gray-600">Een computerbril is speciaal ontworpen voor beeldschermwerk, terwijl een multifocale bril verschillende kijkafstanden combineert.</p>
+                            <p class="text-gray-600">Een computerbril is specifiek ontworpen voor beeldschermwerk op 50-70cm afstand, met speciale coating tegen blauw licht. Een multifocale bril heeft verschillende kijkzones voor ver, middel en dichtbij, maar is niet geoptimaliseerd voor langdurig beeldschermwerk.</p>
                         </div>
                     </div>
-                    <!-- Add more FAQ items -->
+
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full px-6 py-4 text-left hover:bg-gray-50 transition-colors duration-300">
+                            <span class="text-lg font-semibold">Hoe lang gaat een computerbril mee?</span>
+                        </button>
+                        <div x-show="selected === 2" class="px-6 pb-4">
+                            <p class="text-gray-600">Bij normaal gebruik gaat een kwalitatieve computerbril 2-3 jaar mee. De coating en lenzen behouden hun effectiviteit, mits goed onderhouden met de meegeleverde reinigingsdoek en -spray.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full px-6 py-4 text-left hover:bg-gray-50 transition-colors duration-300">
+                            <span class="text-lg font-semibold">Kan ik een computerbril combineren met mijn bestaande sterkte?</span>
+                        </button>
+                        <div x-show="selected === 3" class="px-6 pb-4">
+                            <p class="text-gray-600">Ja, alle computerbrillen kunnen worden voorzien van uw persoonlijke sterkte. We adviseren wel om eerst een recente oogmeting te laten doen voor de meest optimale resultaten.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full px-6 py-4 text-left hover:bg-gray-50 transition-colors duration-300">
+                            <span class="text-lg font-semibold">Wanneer merk ik resultaat van mijn computerbril?</span>
+                        </button>
+                        <div x-show="selected === 4" class="px-6 pb-4">
+                            <p class="text-gray-600">De meeste gebruikers ervaren direct verlichting van oogvermoeidheid. Voor maximaal effect adviseren we de bril consequent te dragen tijdens beeldschermwerk. Na 1-2 weken merkt u significant minder hoofdpijn en vermoeide ogen.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full px-6 py-4 text-left hover:bg-gray-50 transition-colors duration-300">
+                            <span class="text-lg font-semibold">Wat is jullie garantiebeleid?</span>
+                        </button>
+                        <div x-show="selected === 5" class="px-6 pb-4">
+                            <p class="text-gray-600">We bieden 30 dagen niet-goed-geld-terug garantie en 2 jaar garantie op fabricagefouten. Daarnaast krijgt u gratis verzending en retournering binnen Nederland.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-24 bg-blue-600 text-white">
+        <section class="py-24 bg-blue-600 text-white" style="background-image: url('https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'); background-blend-mode: overlay; background-size: cover;">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">
                     ⚠️ LAATSTE KANS! Speciale Aanbieding
                 </h2>
-                <p class="text-xl mb-12">Nog maar 7 computerbrillen beschikbaar met 25% korting!</p>
-                <a href="https://computerbril.org/winkel" class="inline-block bg-white text-blue-600 text-lg px-8 py-4 rounded-full hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg">
+                <p class="text-xl mb-12">Nog maar 7 computerbrillen beschikbaar met 25% korting! Inclusief GRATIS verzending en luxe brillenkoker.</p>
+                <a href="https://computerbril.org/winkel" class="inline-block bg-white text-blue-600 text-lg px-8 py-4 rounded-full hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                     Profiteer Nu
                 </a>
             </div>
@@ -102,13 +235,25 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">Contact</h3>
                     <p class="mb-2">Email: info@computerbril.org</p>
+                    <p class="mb-2">Tel: 020-123456</p>
+                    <p>KvK: 12345678</p>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-blue-400 transition-colors duration-300">Terms & Conditions</a></li>
+                        <li><a href="https://readthisnow.github.io/wat-is-beter--een-computerbril-of-multifocale-bril-2025-04-15-8sehl/privacy.html" class="hover:text-blue-400 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://readthisnow.github.io/wat-is-beter--een-computerbril-of-multifocale-bril-2025-04-15-8sehl/terms.html" class="hover:text-blue-400 transition-colors duration-300">Terms & Conditions</a></li>
+                        <li><a href="https://readthisnow.github.io/wat-is-beter--een-computerbril-of-multifocale-bril-2025-04-15-8sehl/blog.html" class="hover:text-blue-400 transition-colors duration-300">Blog</a></li>
                     </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Volg Ons</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-blue-400 transition-colors duration-300"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="mt-12 pt-8 border-t border-gray-800 text-center">
@@ -116,5 +261,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
